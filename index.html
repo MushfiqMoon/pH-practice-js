@@ -113,19 +113,18 @@
                     <div class="card-header">Module 16 : problem 3</div>
                     <div class="card-body">
                         <h5 class="card-title">John’s teacher gave him two variables. Each variable contains a string.
-                            John’s teacher asked him to combine these two strings and print them in one line. Help John write the program.</h5>
+                            John’s teacher asked him to combine these two strings and print them in one line. Help John
+                            write the program.</h5>
                         <div class="card-text">
                             <div class="mb-3">
                                 <label for="firstSet" class="form-label">First Set of Words</label>
-                                <input type="text" class="form-control" id="firstSet"
-                                    aria-describedby="text" required>
+                                <input type="text" class="form-control" id="firstSet" aria-describedby="text" required>
                             </div>
                             <div class="mb-3">
                                 <label for="secondSet" class="form-label">Second Set of Words</label>
-                                <input type="text" class="form-control" id="secondSet"
-                                    aria-describedby="text" required>
+                                <input type="text" class="form-control" id="secondSet" aria-describedby="text" required>
                             </div>
-                            
+
                             <button class="btn btn-primary" onclick="twoStringConcat()">Combine Sentence</button>
 
                             <div class="card-footer mt-3" id="twoStringConcat">
@@ -133,21 +132,36 @@
                         </div>
                     </div>
                 </div>
+                <!-- Problem 4 -->
+                <div class="card text-bg-dark my-3">
+                    <div class="card-header">Module 16 : problem 4</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Sarah’s mother is teaching her mathematics. She gave Sarah a number and asked her what the
+                            remainder would be if she divided the number by 5. Help Sarah write the program.</h5>
+                        <div class="card-text">
+                            <div class="mb-3">
+                                <label for="givenNum" class="form-label">Given Number</label>
+                                <input type="number" class="form-control" id="givenNum" aria-describedby="number">
+                            </div>
 
+                            <button class="btn btn-primary" onclick="reminderNum()">Remainder</button>
+
+                            <div class="card-footer mt-3" id="reminder">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-2">
+                <div class="sticky-top mt-5"><button type="button" class="btn btn-danger" onclick="location.reload();">Reload All</button></div>
             </div>
         </div>
     </div>
 
     <script>
 
-        twoStringConcat = () => {
-            let firstSet = document.getElementById('firstSet').value;
-            let secondSet = document.getElementById('secondSet').value;
 
-            let fullsentence = firstSet + " " + secondSet;
-
-            document.getElementById("twoStringConcat").innerHTML = `${fullsentence}`
-        }
 
     </script>
 

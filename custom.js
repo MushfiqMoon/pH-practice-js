@@ -1,5 +1,4 @@
 // Module 16 : problem 1
-
 calculateReturn = () => {
 
     let momAmount = parseInt(document.getElementById('momAmount').value);
@@ -25,4 +24,23 @@ avgMark = () => {
     let AverageMark = total / 5;
     // result
     document.getElementById("avgMark").innerHTML = `Average marks = ${AverageMark}`
+}
+
+// Module 16 : problem 3
+twoStringConcat = () => {
+    let firstSet = document.getElementById('firstSet').value;
+    let secondSet = document.getElementById('secondSet').value;
+    // calculation
+    let fullsentence = firstSet + " " + secondSet;
+    // result
+    document.getElementById("twoStringConcat").innerHTML = `${fullsentence}`
+}
+
+// Module 16 : problem 4
+reminderNum = () => {
+    let givenNum = parseInt(document.getElementById('givenNum').value);
+    // calculation
+    let reminder = givenNum % 5;
+    // result
+    document.getElementById("reminder").innerHTML = `${reminder}`
 }
