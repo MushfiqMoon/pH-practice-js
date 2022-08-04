@@ -86,3 +86,30 @@ getGread = () => {
         document.getElementById("gread").innerHTML = ` Try Again you got F gread and you failed on the EXAM`
     }
 }
+
+
+
+
+
+
+// Module 19 : problem 4
+
+calculateSquare = () => {
+    let squareOutput = parseInt(document.getElementById('squareOutput').value)
+    // calculation
+    let squire = squareOutput * squareOutput;
+    // result
+    document.getElementById("squire").innerHTML = `Your Input is ${squareOutput} you will get:- ${squire}`
+}
+
+
+// Module 19 : problem 5
+
+const pizza = {
+
+    toppings: ['cheese', 'sauce', 'pepperoni'],
+    crust: 'deep dish',
+    serves: 2
+
+}
+console.log("Extra pizzaa problem Solution:-> ", pizza.toppings[2]);

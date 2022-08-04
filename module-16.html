@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS Practice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-light">
+            <div class="container">
+                <a class="navbar-brand">Navbar</a>
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card mt-3 sticky-top">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="#prob-1">Problem - 1</a></li>
+                        <li class="list-group-item"><a href="#prob-2">Problem - 2</a></li>
+                        <li class="list-group-item"><a href="#prob-3">Problem - 3</a></li>
+                        <li class="list-group-item"><a href="#prob-4">Problem - 4</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <!-- Problem 1 -->
+                <div id="prob-1" class="card text-bg-dark my-3">
+                    <div class="card-header">Module 16 : problem 1</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Harry’s mom gave him money and asked him to buy some oranges and apples.
+                            Write a program to help
+                            Harry calculate how much money the shopkeeper will return.</h5>
+                        <div class="card-text">
+                            <div class="mb-3">
+                                <label for="momAmount" class="form-label">Given by mom</label>
+                                <input type="number" class="form-control" id="momAmount" aria-describedby="number"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="orangePrice" class="form-label">price of Oranges</label>
+                                <input type="number" class="form-control" id="orange" aria-describedby="number"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="applePrice" class="form-label">Price of Apples</label>
+                                <input type="number" class="form-control" id="apple" aria-describedby="number" required>
+                            </div>
+                            <button class="btn btn-primary" onclick="calculateReturn()">Return</button>
+
+                            <div class="card-footer mt-3" id="willReturn">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Problem 2 -->
+                <div id="prob-2" class="card text-bg-dark my-3">
+                    <div class="card-header">Module 16 : problem 2</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Write a program to calculate the average marks of Mathematics, Biology,
+                            Chemistry, Physics, and Bangla of a student.</h5>
+                        <div class="card-text">
+                            <div class="mb-3">
+                                <label for="mathsNum" class="form-label">Marks of Mathematics</label>
+                                <input type="number" class="form-control" min="0" max="100" id="mathsNum"
+                                    aria-describedby="number" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="biologyNum" class="form-label">Marks of Biology</label>
+                                <input type="number" class="form-control" min="0" max="100" id="biologyNum"
+                                    aria-describedby="number" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="chemistryNum" class="form-label">Marks of Chemistry</label>
+                                <input type="number" class="form-control" min="0" max="100" id="chemistryNum"
+                                    aria-describedby="number" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="physicsNum" class="form-label">Marks of Physics</label>
+                                <input type="number" class="form-control" min="0" max="100" id="physicsNum"
+                                    aria-describedby="number" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="banglaNum" class="form-label">Marks of Bangla</label>
+                                <input type="number" class="form-control" min="0" max="100" id="banglaNum"
+                                    aria-describedby="number" required>
+                            </div>
+
+                            <button class="btn btn-primary" onclick="avgMark()">Avg. Mark</button>
+
+                            <div class="card-footer mt-3" id="avgMark">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Problem 3 -->
+                <div id="prob-3" class="card text-bg-dark my-3">
+                    <div class="card-header">Module 16 : problem 3</div>
+                    <div class="card-body">
+                        <h5 class="card-title">John’s teacher gave him two variables. Each variable contains a string.
+                            John’s teacher asked him to combine these two strings and print them in one line. Help John
+                            write the program.</h5>
+                        <div class="card-text">
+                            <div class="mb-3">
+                                <label for="firstSet" class="form-label">First Set of Words</label>
+                                <input type="text" class="form-control" id="firstSet" aria-describedby="text" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="secondSet" class="form-label">Second Set of Words</label>
+                                <input type="text" class="form-control" id="secondSet" aria-describedby="text" required>
+                            </div>
+
+                            <button class="btn btn-primary" onclick="twoStringConcat()">Combine Sentence</button>
+
+                            <div class="card-footer mt-3" id="twoStringConcat">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Problem 4 -->
+                <div id="prob-4" class="card text-bg-dark my-3">
+                    <div class="card-header">Module 16 : problem 4</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Sarah’s mother is teaching her mathematics. She gave Sarah a number and
+                            asked her what the
+                            remainder would be if she divided the number by 5. Help Sarah write the program.</h5>
+                        <div class="card-text">
+                            <div class="mb-3">
+                                <label for="givenNum" class="form-label">Given Number</label>
+                                <input type="number" class="form-control" id="givenNum" aria-describedby="number">
+                            </div>
+
+                            <button class="btn btn-primary" onclick="reminderNum()">Remainder</button>
+
+                            <div class="card-footer mt-3" id="reminder">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-2">
+                <div class="sticky-top mt-5"><button type="button" class="btn btn-danger"
+                        onclick="location.reload();">Reload All</button></div>
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+
+
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="./custom.js"></script>
+
+
+</body>
+
+</html>
