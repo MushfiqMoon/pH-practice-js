@@ -88,10 +88,6 @@ getGread = () => {
 }
 
 
-
-
-
-
 // Module 19 : problem 4
 
 calculateSquare = () => {
