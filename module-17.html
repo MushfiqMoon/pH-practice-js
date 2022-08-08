@@ -90,28 +90,42 @@
                 </div>
                 <!-- Problem 3 -->
                 <div class="card text-bg-dark my-3">
-                    <div class="card-header">Module 17 : problem 3</div>
+                    <div class="card-header">Module 17 : problem 3.A & 3.B</div>
                     <div class="card-body">
-                        <h5 class="card-title">You are given three numbers 13, 79, and 45. Write a program that will print the
+                        <h5 class="card-title">3.A: You are given three numbers 13, 79, and 45. Write a program that will
+                            print the
                             largest number using if-else.
+                        </h5>
+                        <h5 class="card-title">
+                            3.B: You are given a triangle with the sides 9, 8, 9. Write a program to check whether a
+                            triangle is Isosceles or not using if-else.
                         </h5>
                         <div class="card-text">
                             <div class="mb-3">
-                                <label for="friendsGread" class="form-label">Put yourr final exam
-                                    Results<small>(number)</small> below</label>
-                                <input type="number" class="form-control" id="friendsGread" aria-describedby="number">
-                            </div>
-                            <button class="btn btn-primary" onclick="getGread()">Get The Gread</button>
+                                <label class="form-label">Input three number below</label>
+                                <div class="row">
 
-                            <div class="card-footer mt-3" id="gread">
+                                    <div class="col-md-4"><input type="number" class="form-control" id="number1"
+                                            aria-describedby="number"></div>
+                                    <div class="col-md-4"><input type="number" class="form-control" id="number2"
+                                            aria-describedby="number"></div>
+                                    <div class="col-md-4"><input type="number" class="form-control" id="number3"
+                                            aria-describedby="number"></div>
+                                </div>
+
+
+
                             </div>
+                            <button class="btn btn-primary" onclick="getMaxNum()">Max Number</button>
+
+                            <div class="card-footer mt-3" id="bigNum"></div>
+                            <div class="card-footer mt-3" id="isosceles"></div>
                         </div>
                     </div>
                 </div>
+                <div class="col-md-2">
+                </div>
             </div>
-            <div class="col-md-2">
-            </div>
-        </div>
     </main>
 
 
@@ -119,51 +133,14 @@
 
     <script>
 
-            let num1 = 223
-            let num2 = 427
-            let num3 = 121
 
-            let bigNum = 0;
-
-            if (num1 > num2 && num1>num3) {
-                bigNum = num1
-            }else if (num2 > num1 && num1>num3) {
-                bigNum = num2
-            }
-            else {
-                bigNum = num3
-            }
-             console.log(bigNum);
-
-            // Math.max(num1,num2,num3);
+        // Math.max(num1,num2,num3);
 
 
-        // =====================================================
+        // Module 16 : problem 4
 
-        // let sentence = "ajke amar mon valo nei"
 
-        // function multiplier (element, times){
 
-        //     for (let i = 1; i <= times; i++) {
-        //         console.log(sentence);
-        //     }
-        // }
-
-        // multiplier(sentence, 10)
-
-        // =====================================================
-
-        // var fruits = ['Apple', 'Banana', 'Orange'];
-
-        // let isAvilable = fruits.indexOf('Banana');
-
-        // // console.log(isAvilable);
-
-        // fruits[isAvilable] = 'banbna'
-
-        // console.log(fruits);
-
-        // =====================================================
 
 
     </script>
